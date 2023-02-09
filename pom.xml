@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.omer</groupId>
 	<artifactId>CRUD-Spring</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
 	<name>CRUD-Spring</name>
 	<description>Spring with React v 3.0 </description>
 	<properties>

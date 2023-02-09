@@ -1,0 +1,11 @@
+spring:
+  jpa:
+      hibernate:
+        ddl-auto: create-drop
+  datasource:
+    url: "jdbc:postgresql://localhost:5432/CRUD-Spring"
+    username: "postgres"
+    password: "peru2020"
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 3004
