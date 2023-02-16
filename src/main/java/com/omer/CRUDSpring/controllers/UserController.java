@@ -41,8 +41,11 @@ public class UserController {
         }).orElseThrow(() -> new UserNotFoundException(id)));
     }
 
+    @DeleteMapping("/user/{id}")
     ResponseEntity<String> deleteUser(@PathVariable Long id) {
-        if (!repository.existsById(id)) throw new UserNotFoundException(id);
+        if (!repository.existsById(id)) {
+            throw new UserNotFoundException(id);
+        }
         repository.deleteById(id);
         return ResponseEntity.ok("usuario con imei " + id + " se elimino satisfactoriamente");
     }
